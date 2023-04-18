@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "ChatGPT Sidebar Toggle",
+    "version": "1.0",
+    "description": "Toggle the sidebar of chatGPT website",
+    "icons": {
+      "48": "icon.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"]
+      }
+    ]
+  }
+  
